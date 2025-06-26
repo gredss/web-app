@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sahara Taupe Velvet Loafers - Christian Wijaya</title>
+  <link rel="stylesheet" href="productdetail10.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./pics/ChristianWijaya_Logo-removebg.png" alt="Christian Wijaya Logo" />
+            </div>
+            <button id="menuToggle" class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+
+            <nav id="mobileMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="product.html">Products</a>
+                <span>/</span>
+                <span>Sahara Taupe Velvet Loafers</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Product Section -->
+    <main>
+        <div class="product-container">
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+                <div class="thumbnail-column">
+                    <div class="thumbnail active" onclick="switchImage(this)">
+                        <img src="./pics/loaf.png" alt="View 1">
+                    </div>
+                    <div class="thumbnail" onclick="switchImage(this)">
+                        <img src="./pics/loaf1.png" alt="View 2">
+                    </div>
+                    <div class="thumbnail" onclick="switchImage(this)">
+                        <img src="./pics/loaf2.png" alt="View 3">
+                    </div>
+                    <div class="thumbnail" onclick="switchImage(this)">
+                        <img src="./pics/loaf3.png" alt="View 4">
+                    </div>
+                </div>
+                
+                <div class="main-image">
+                    <img id="mainProductImage" src="./pics/loaf.png" alt="Sahara Taupe Velvet Loafers">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <p class="product-category">Women's Premium Footwear</p>
+                <h1 class="product-title">Sahara Taupe Velvet Loafers</h1>
+                <p class="product-price">IDR 10,200,000</p>
+                
+                <div class="product-description">
+                    <p>Understated yet exquisitely refined, the Sahara Taupe Velvet Loafers are handcrafted in Portugal from upcycled deadstock velvet. These loafers feature a streamlined almond toe, memory foam insole, and leather sole crafted from vegetable-tanned remnants. Designed for the sustainable sophisticate, each pair prevents over 1 kilogram of textile waste from reaching landfills. The neutral tone ensures versatility across tailored and relaxed ensembles. Finished with a hand-stitched tonal strap, these loafers exemplify the art of ethical shoemaking.</p>
+                </div>
+
+                <!-- Size Selection -->
+                <div class="size-section">
+                    <label class="size-label">Select Size</label>
+                    <div class="size-options">
+                        <div class="size-option" onclick="selectSize(this)" data-size="36">EU 36</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="37">EU 37</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="38">EU 38</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="39">EU 39</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="40">EU 40</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="41">EU 41</div>
+                    </div>
+                </div>
+
+                <div class="purchase-section">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" onclick="changeQuantity(-1)">−</button>
+                        <input type="number" class="quantity-input" value="1" min="1" id="quantity">
+                        <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <div class="favourite-section">
+                    <button class="favourite-btn" onclick="toggleFavourite()">
+                        <span id="heart-icon">♡</span>
+                        <span>Favourite</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-section">
+            <h4>Customer Care</h4>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+                <li><a href="#">Size Guide</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>FAQ</h4>
+            <ul>
+                <li><a href="#">Product Care</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section newsletter">
+            <h4>Newsletter Subscription</h4>
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe</button>
+            <p>Join our circle. Be the first to know about new collections and private events.</p>
+        </div>
+    </footer>
+
+    <script src="productdetail10.js">
+    
+    </script>
+</body>
+</html>

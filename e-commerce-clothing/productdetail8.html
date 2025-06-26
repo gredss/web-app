@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moonlight Satin Slip Dress - Christian Wijaya</title>
+  <link rel="stylesheet" href="productdetail8.css">
+</head>
+<body>
+    <!-- Header - Same structure as home page -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./pics/ChristianWijaya_Logo-removebg.png" alt="Christian Wijaya Logo" />
+            </div>
+
+            <button id="menuToggle" class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+
+            <nav id="mobileMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="product.html">Products</a>
+                <span>/</span>
+                <span>Moonlight Satin Slip Dress</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Product Section -->
+    <main>
+        <div class="product-container">
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+                <div class="thumbnail-column">
+                    <div class="thumbnail active" onclick="switchImage(this)">
+                        <img src="./pics/silk-satin.png" alt="Front View">
+                    </div>
+                    <div class="thumbnail" onclick="switchImage(this)">
+                        <img src="./pics/silk-satin1.png" alt="Back View">
+                    </div>
+                    <div class="thumbnail" onclick="switchImage(this)">
+                        <img src="./pics/silk-satin2.png" alt="Side View">
+                    </div>
+                    <div class="thumbnail" onclick="switchImage(this)">
+                        <img src="./pics/silk-satin3.png" alt="Detail View">
+                    </div>
+                </div>
+                
+                <div class="main-image">
+                    <img id="mainProductImage" src="./pics/silk-satin.png" alt="Moonlight Satin Slip Dress">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <div class="sustainable-badge">Sustainable Materials</div>
+                <h1 class="product-title">Moonlight Satin Slip Dress</h1>
+                <p class="product-category">Women's Premium Dress</p>
+                <p class="product-price">IDR 12,800,000</p>
+
+                <!-- Size Selection -->
+                <div class="size-section">
+                    <div class="size-header">
+                        <label class="size-label">Select Size</label>
+                        <div class="size-guide" onclick="showSizeGuide()">
+                            📏 Size Guide
+                        </div>
+                    </div>
+                    <div class="size-options">
+                        <div class="size-option" onclick="selectSize(this)" data-size="S">S</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="M">M</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="L">L</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="XL">XL</div>
+                        <div class="size-option unavailable" data-size="XXL">XXL</div>
+                        <div class="size-option unavailable" data-size="XXXL">3XL</div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="add-to-bag" id="addToBagBtn" onclick="addToBag()" disabled>
+                        Add to Bag
+                    </button>
+                    <button class="favourite-btn" onclick="toggleFavourite()">
+                        <span id="heartIcon">🤍</span>
+                        <span>Favourite</span>
+                    </button>
+                </div>
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <p>A vision of elegance and simplicity, the Moonlight Satin Slip Dress is crafted from eco-satin—an innovative textile derived from certified recycled polyester and processed with closed-loop dyeing technology. This minimalist silhouette features a draped cowl neckline, adjustable spaghetti straps, and a soft sheen reminiscent of moonlit evenings.</p>
+                    
+                    <p>Lightweight yet substantial, this gown is perfect for formal gatherings or elevated everyday styling. With each purchase, a portion is donated to ocean plastic cleanup initiatives, reinforcing the dress’s ethos of elegance with impact.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-section">
+            <h4>Customer Care</h4>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+                <li><a href="#">Size Guide</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>FAQ</h4>
+            <ul>
+                <li><a href="#">Product Care</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section newsletter">
+            <h4>Newsletter Subscription</h4>
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe</button>
+            <p>Join our circle. Be the first to know about new collections and private events.</p>
+        </div>
+    </footer>
+    <script src="productdetail8.js"></script>
+    
+</body>
+</html>

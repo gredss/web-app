@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AeroTech Performance Spikeless - Christian Wijaya</title>
+  <link rel="stylesheet" href="productdetail2.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./pics/ChristianWijaya_Logo-removebg.png" alt="Christian Wijaya Logo" />
+            </div>
+            <button id="menuToggle" class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+
+            <nav id="mobileMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="product.html">Products</a>
+                <span>/</span>
+                <span>AeroTech Performance Spikeless</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Product Section -->
+    <main>
+        <div class="product-container">
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+                <div class="thumbnail-column">
+                    <div class="thumbnail active" onclick="switchImage(this)">
+                        <img src="./pics/white-shoe.png" alt="View 1">
+                    </div>
+                    <div class="thumbnail" onclick="switchImage(this)">
+                        <img src="./pics/white-shoe1.png" alt="View 2">
+                    </div>
+                    <div class="thumbnail" onclick="switchImage(this)">
+                        <img src="./pics/white-shoe2.png" alt="View 3">
+                    </div>
+                    <div class="thumbnail" onclick="switchImage(this)">
+                        <img src="./pics/white-shoe3.png" alt="View 4">
+                    </div>
+                </div>
+                
+                <div class="main-image">
+                    <img id="mainProductImage" src="./pics/white-shoe.png" alt="AeroTech Performance Spikeless">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <p class="product-category">Men's Golf Footwear</p>
+                <h1 class="product-title">AeroTech Performance Spikeless</h1>
+                <p class="product-price">IDR 13,500,000</p>
+                
+                <div class="product-description">
+                    <p>Built for the modern athlete, the AeroTech Performance Spikeless Shoes fuse innovation with environmental stewardship. The upper is made from bio-based synthetic leather that mimics the softness and durability of full-grain hide without the ecological footprint. Its lightweight sole features upcycled TPU materials and a translucent aqua-tint inspired by coastal environments. Engineered for all-day wear, both on and off the course, these shoes prioritize foot stability and long-term recyclability. An ideal choice for those who value performance and planet-conscious design.</p>
+                </div>
+
+                <!-- Size Selection -->
+                <div class="size-section">
+                    <label class="size-label">Select Size</label>
+                    <div class="size-options">
+                        <div class="size-option" onclick="selectSize(this)" data-size="38">EU 38</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="39">EU 39</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="40">EU 40</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="41">EU 41</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="42">EU 42</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="43">EU 43</div>
+                        <div class="size-option" onclick="selectSize(this)" data-size="44">EU 44</div>
+                    </div>
+                </div>
+
+                <div class="purchase-section">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" onclick="changeQuantity(-1)">−</button>
+                        <input type="number" class="quantity-input" value="1" min="1" id="quantity">
+                        <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <div class="favourite-section">
+                    <button class="favourite-btn" onclick="toggleFavourite()">
+                        <span id="heart-icon">♡</span>
+                        <span>Favourite</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-section">
+            <h4>Customer Care</h4>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+                <li><a href="#">Size Guide</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>FAQ</h4>
+            <ul>
+                <li><a href="#">Product Care</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section newsletter">
+            <h4>Newsletter Subscription</h4>
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe</button>
+            <p>Join our circle. Be the first to know about new collections and private events.</p>
+        </div>
+    </footer>
+
+    <script src="productdetail2.js">
+    
+    </script>
+</body>
+</html>

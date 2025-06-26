@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+
+    <title>Model Recruitment - Christian Wijaya</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./pics/ChristianWijaya_Logo-removebg.png" alt="Christian Wijaya Logo" />
+            </div>
+            <button id="menuToggle" class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+            <nav id="mobileMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="model-recruitment">
+        <!-- Hero Section -->
+        <section class="hero hero-events">
+            <div class="hero-content">
+                <h1>Be the Face of Timeless Elegance</h1>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content">
+            <p>This is your opportunity to become a part of Christian Wijaya, a luxury fashion house renowned for its refined craftsmanship and modern sophistication. We are seeking aspiring models who embody confidence, grace, and a passion for high fashion.</p>
+            <p>Join us in representing a brand that defines sustainable luxury, where every creation tells a story of artistry, innovation, and heritage. Selected participants will have the chance to collaborate with a prestigious fashion label that continues to captivate style connoisseurs and trendsetters worldwide. Complete the registration form to begin your journey with Christian Wijaya.</p>
+        </section>
+
+        <!-- Registration Form -->
+        <form class="registration-form" id="modelForm">
+            <div class="form-header">
+                <h2>Model Application</h2>
+                <p>All fields marked with * are required</p>
+            </div>
+
+            <div class="form-grid">
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <div class="error" id="fullNameError">Please enter your full name</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error" id="emailError">Please enter a valid email from supported providers</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <div class="error" id="phoneError">Please enter a valid Indonesian phone number</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthDate">Date of Birth *</label>
+                    <input type="date" id="birthDate" name="birthDate" required>
+                    <div class="error" id="birthDateError">You must be at least 17 years old</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="height">Height (cm) *</label>
+                    <input type="number" id="height" name="height" min="150" max="220" required>
+                    <div class="error" id="heightError">Please enter a valid height between 150-220 cm</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">City/Location *</label>
+                    <input type="text" id="location" name="location" required>
+                    <div class="error" id="locationError">Please enter your location</div>
+                </div>
+
+                <!-- Gender Selection -->
+                <div class="form-group full-width">
+                    <label>Gender *</label>
+                    <div class="gender-options">
+                        <div class="gender-option">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="gender-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="gender-option">
+                            <input type="radio" id="non-binary" name="gender" value="non-binary">
+                            <label for="non-binary">Non-binary</label>
+                        </div>
+                    </div>
+                    <div class="error" id="genderError">Please select your gender</div>
+                </div>
+
+                <!-- Experience Level -->
+                <div class="form-group">
+                    <label for="experience">Modeling Experience</label>
+                    <select id="experience" name="experience">
+                        <option value="">Select experience level</option>
+                        <option value="beginner">Beginner (0-1 years)</option>
+                        <option value="intermediate">Intermediate (2-5 years)</option>
+                        <option value="experienced">Experienced (5+ years)</option>
+                    </select>
+                </div>
+
+                <!-- Social Media -->
+                <div class="form-group">
+                    <label for="instagram">Instagram Handle</label>
+                    <input type="text" id="instagram" name="instagram" placeholder="@yourusername">
+                    <small>Optional - helps us view your style and presence</small>
+                </div>
+
+                <!-- Portfolio Upload -->
+                <div class="form-group full-width">
+                    <label for="portfolio">Portfolio Link</label>
+                    <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com or drive.google.com/...">
+                    <small>Share a link to your modeling portfolio, photos, or any relevant work</small>
+                    <div class="error" id="portfolioError">Please enter a valid URL (must start with http:// or https://)</div>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="form-group full-width">
+                    <label for="message">Why do you want to work with Christian Wijaya?</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your passion for fashion and what draws you to our brand..."></textarea>
+                </div>
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div class="terms">
+                <h3>Terms and Conditions</h3>
+                <p>By submitting this application, you agree that:</p>
+                <ul>
+                    <li>All information provided is accurate and complete</li>
+                    <li>Your personal data will be used solely for this casting evaluation</li>
+                    <li>You are at least 17 years old at the time of application</li>
+                    <li>Submitting this form does not guarantee selection or employment</li>
+                    <li>Selected candidates will be contacted within 2-3 weeks</li>
+                    <li>You consent to participating in photo/video content if selected</li>
+                    <li>You understand this is an unpaid audition process</li>
+                </ul>
+                <div class="terms-checkbox">
+                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                    <label for="agreeTerms">I have read and agree to the Terms and Conditions and Privacy Policy *</label>
+                    <div class="error" id="agreeTermsError">You must accept the terms to continue</div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Submit Application</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h4>Customer Care</h4>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+                <li><a href="#">Size Guide</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>FAQ</h4>
+            <ul>
+                <li><a href="#">Product Care</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section newsletter">
+            <h4>Newsletter Subscription</h4>
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe</button>
+            <p>Join our circle. Be the first to know about new collections and private events.</p>
+        </div>
+    </footer>
+<script src="events.js"></script>
+</body>
+</html>
